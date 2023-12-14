@@ -64,6 +64,7 @@ function playRoundGame(numberRound){
     alert("We are in " + (numberRound + 1) + " round");
     let playerSelection = prompt("Choose: Rock, Paper or Scissors");
     let computerSelection = getComputerChoice();
+    alert("The computer chooses "+computerSelection);
     let round = playRound(playerSelection, computerSelection);
     alert("In this round " + round);
     return round;
