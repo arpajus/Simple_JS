@@ -5,4 +5,4 @@ GuessNumber: Little game where you have to guess a random number between 1 and 1
 
 RockPaperScissors: The traditional game of rock paper scissors where I developed just the algorithm in order to work with conditionals, loops and functions in JS. 
 
-ManipulatingDom: Just few lines of code to show how to change the DOM with JS. 
+ManipulatingDom: Just few lines of code to show how to change the DOM with JS. Also is added how EventListener works. 

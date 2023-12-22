@@ -26,3 +26,10 @@ const meToo=document.createElement("p");
 meToo.classList.add("meToo");
 meToo.textContent="ME TOO!";
 secondContainer.appendChild(meToo);
+
+function alertFunction(){
+    alert("HELLOOOOO");
+}
+
+const button=document.querySelector("#button");
+button.addEventListener("click", alertFunction);
