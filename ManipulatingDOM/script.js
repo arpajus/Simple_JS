@@ -32,4 +32,6 @@ function alertFunction(){
 }
 
 const button=document.querySelector("#button");
-button.addEventListener("click", alertFunction);
+button.addEventListener("click", function(e){
+    e.target.style.backgroundColor="blue";
+});
