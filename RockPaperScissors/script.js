@@ -62,7 +62,9 @@ function game() {
 
 function playRoundGame(numberRound){
     alert("We are in " + (numberRound + 1) + " round");
-    let playerSelection = prompt("Choose: Rock, Paper or Scissors");
+    let playerSelection=event.target.id.toLowerCase().replace("button","");
+    alert("You chose " + playerSelection);
+
     let computerSelection = getComputerChoice();
     alert("The computer chooses "+computerSelection);
     let round = playRound(playerSelection, computerSelection);
@@ -89,5 +91,16 @@ function sayWinner(userPoints,computerPoints){
         alert("It's a tie");
     }
 }
-
+const paper=document.querySelector("#paperButton");
+const rock=document.querySelector("#rockButton");
+const scissors=document.querySelector("#scissorsButton");
+paper.addEventListener("click", function () {
+    playRoundGame("paper");
+});
+rock.addEventListener("click", function () {
+    playRoundGame("rock");
+});
+scissors.addEventListener("click", function () {
+    playRoundGame("scissors");
+});
 game();
