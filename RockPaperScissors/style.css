@@ -1,0 +1,30 @@
+#options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+button {
+    cursor: pointer;
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+    padding: 0 2em;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+button:hover {
+    background: #fff;
+    color: #1AAB8A;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
